@@ -1,7 +1,10 @@
 # AI Software Engineering Assistant
 
 <p align="center">
-  <img src="./docs/screenshots/ai-assistant-dashboard.svg" alt="AI Software Engineering Assistant dashboard" width="1200" />
+  <img src="https://img.shields.io/badge/React-19.2-61dafb?logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white" alt="Python 3.13" />
 </p>
 
 <p align="center">
@@ -13,40 +16,49 @@
   </a>
 </p>
 
-A modern AI-powered software engineering workspace built with React + Vite on the frontend and FastAPI on the backend. It helps developers analyze, debug, review, generate, document, and understand code inside a polished dashboard experience.
+<p align="center">
+  <img src="./docs/screenshots/ai-assistant-dashboard.svg" alt="AI Software Engineering Assistant dashboard preview" width="1200" />
+</p>
 
-## ✨ Highlights
+A polished AI-powered engineering workspace designed to help developers analyze, debug, review, refactor, document, and understand code with a modern dashboard experience.
 
-- AI-assisted debugging and code analysis workflow
-- Project upload and indexing with searchable code intelligence
-- Authenticated dashboard with protected routes and history
-- Support for explain, review, refactor, tests, documentation, and chat tools
-- 3D project intelligence visualization and code metrics
-- FastAPI backend with SQLite persistence and JWT auth
+## Why this project?
 
-## 🖼️ Screenshot
+AI-powered software engineering workflows are often fragmented across tools, tabs, and disconnected interfaces. This project brings everything into one workspace:
+
+- code review and debugging assistance
+- project-level analysis and insight
+- test generation and refactoring guidance
+- API-backed AI chat workflows
+- clean dashboard UX for developer productivity
+
+## Key features
+
+- Intelligent code analysis and explanation
+- Debug assistance with error trace support
+- Automated test generation
+- Documentation generation for code and APIs
+- Code review and refactor suggestions
+- Project upload and indexing workflow
+- Secure auth with JWT tokens
+- SQLite-backed persistence for projects and history
+- 3D project intelligence visualization
+
+## Tech stack
+
+- Frontend: React, Vite, React Router, Framer Motion
+- 3D interface: React Three Fiber / Drei
+- IDE experience: Monaco Editor
+- Backend: FastAPI, SQLite, JWT auth
+- AI layer: local deterministic analysis with optional OpenAI-compatible provider support
+
+## App preview
 
 <p align="center">
   <img src="./docs/screenshots/ai-assistant-dashboard.svg" alt="AI assistant interface preview" width="1000" />
 </p>
 
-## 🚀 Live app
-
-The app is configured to run locally with:
-
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000
-- Swagger docs: http://localhost:8000/docs
-
-## 🧩 Tech stack
-
-- Frontend: React, Vite, React Router, Tailwind-inspired styling, Framer Motion
-- 3D UI: React Three Fiber, Drei
-- IDE experience: Monaco Editor
-- Backend: FastAPI, SQLite, JWT auth
-- AI tools: deterministic local analysis with optional OpenAI-compatible provider support
-
-## 🛠️ Getting started
+## Local setup
 
 ### 1) Install frontend dependencies
 
@@ -60,7 +72,7 @@ npm install
 npm run dev -- --host 0.0.0.0
 ```
 
-Open: http://localhost:5173
+Open the app at: http://localhost:5173
 
 ### 3) Start the backend
 
@@ -72,22 +84,25 @@ Copy-Item backend\.env.example backend\.env
 uvicorn app.main:app --app-dir backend --reload --port 8000
 ```
 
-> Make sure `JWT_SECRET` is set in `backend/.env` before using authentication.
+> Make sure `JWT_SECRET` is set in `backend/.env` before using authentication features.
 
-## 🔐 Configuration
+## Environment configuration
 
-Set the following in `backend/.env` for optional AI-backed features:
+Create or update `backend/.env` with the values below:
 
 ```env
-JWT_SECRET=your-long-random-value
-LLM_API_KEY=your-key
+JWT_SECRET=your-long-random-secret
+DATABASE_PATH=./backend/data/assistant.db
+CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
+MAX_UPLOAD_MB=20
+LLM_API_KEY=
 LLM_MODEL=gpt-4o-mini
 LLM_BASE_URL=https://api.openai.com/v1
 ```
 
-Without `LLM_API_KEY`, the app still works with local deterministic analysis and templates.
+If no LLM key is configured, the app continues to work using local deterministic analysis and templates.
 
-## 📁 Project structure
+## Project structure
 
 ```text
 ai-swe-assistant/
@@ -96,28 +111,29 @@ ai-swe-assistant/
 │   ├── data/
 │   ├── tests/
 │   ├── .env
+│   ├── .env.example
 │   └── requirements.txt
 ├── src/
 ├── public/
 ├── docs/
 │   └── screenshots/
 ├── package.json
+├── package-lock.json
+├── vite.config.js
 ├── index.html
 ├── README.md
 ├── RUN_ME.md
-└── vite.config.js
+└── .gitignore
 ```
 
-## 🧪 Run tests
+## Run tests
 
 ```powershell
 Set-Location backend
 python -m unittest discover -s tests -v
 ```
 
-## 🚀 Push to GitHub
-
-If your GitHub repository is ready, run:
+## Production-ready workflow
 
 ```bash
 git init
@@ -128,12 +144,18 @@ git remote add origin <your-github-repo-url>
 git push -u origin main
 ```
 
-## 📌 Notes
+## Notes
 
-- The app supports code review, explanations, debugging, test generation, refactoring, docs generation, and project chat.
-- Project indexing stores supported text files and uses keyword-based retrieval.
-- Emails for password reset are not configured by default unless you add a mail provider.
+- Supports explain, review, debug, test, refactor, docs, and chat workflows.
+- Project indexing stores supported text files and enables keyword-based retrieval.
+- Password reset emails are not enabled by default without a mail provider.
 
-## ❤️ Purpose
+## Future direction
 
-This project is built to act like a smart engineering workspace that helps developers move faster from idea to delivery while keeping a clean developer experience.
+This project is designed to evolve into a practical software engineering assistant for rapid debugging, code understanding, project intelligence, and AI-assisted delivery workflows.
+
+---
+
+<p align="center">
+  Built with ❤️ for developers who want faster, smarter engineering workflows.
+</p>
