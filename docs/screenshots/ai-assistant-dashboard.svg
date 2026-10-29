@@ -1,0 +1,133 @@
+<svg width="1600" height="980" viewBox="0 0 1600 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F7F5"/>
+      <stop offset="1" stop-color="#E9F3EF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#F6FBF9" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1D9D7F"/>
+      <stop offset="1" stop-color="#0F7C6D"/>
+    </linearGradient>
+    <linearGradient id="codeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0D1C22"/>
+      <stop offset="1" stop-color="#0A1520"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0F2A2D" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+
+  <g opacity="0.55">
+    <path d="M0 120H1600" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M0 240H1600" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M0 360H1600" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M0 480H1600" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M0 600H1600" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M0 720H1600" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M0 840H1600" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M200 0V980" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M400 0V980" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M600 0V980" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M800 0V980" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M1000 0V980" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M1200 0V980" stroke="#B8C9C3" stroke-width="1"/>
+    <path d="M1400 0V980" stroke="#B8C9C3" stroke-width="1"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="50" y="65" width="360" height="850" rx="32" fill="url(#card)"/>
+    <rect x="430" y="90" width="1080" height="770" rx="34" fill="url(#card)"/>
+  </g>
+
+  <text x="102" y="195" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1F2E2B" letter-spacing="1.2">AI SOFTWARE</text>
+  <text x="102" y="230" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1F2E2B" letter-spacing="1.2">ENGINEERING</text>
+  <text x="102" y="265" font-size="24" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1F2E2B" letter-spacing="1.2">ASSISTANT</text>
+
+  <g transform="translate(98 340)">
+    <text x="0" y="18" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#6B7B77" letter-spacing="2.2">WORKSPACE</text>
+    <rect x="0" y="40" width="200" height="36" rx="12" fill="#F2F4F3"/>
+    <circle cx="22" cy="58" r="8" fill="#AFC9C0"/>
+    <text x="42" y="64" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#2B3B3A">Dashboard</text>
+
+    <rect x="0" y="110" width="200" height="36" rx="12" fill="#F2F4F3"/>
+    <rect x="18" y="122" width="12" height="12" rx="2" fill="#AFC9C0"/>
+    <text x="42" y="133" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#2B3B3A">Projects</text>
+
+    <rect x="0" y="170" width="220" height="42" rx="14" fill="#E9F3EE" stroke="#B7D8CD"/>
+    <text x="42" y="198" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#1E4A42" font-weight="600">Code Workspace</text>
+  </g>
+
+  <g transform="translate(90 610)">
+    <text x="0" y="18" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#6B7B77" letter-spacing="2.2">AI TOOLS</text>
+    <rect x="0" y="38" width="230" height="44" rx="14" fill="#F3F6F5"/>
+    <text x="42" y="68" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#2B3B3A">Explain Code</text>
+
+    <rect x="0" y="94" width="260" height="52" rx="16" fill="#EAF5F1" stroke="#BCCFCA"/>
+    <text x="52" y="128" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#1E4A42" font-weight="700">Debug Code</text>
+
+    <rect x="0" y="160" width="230" height="44" rx="14" fill="#F3F6F5"/>
+    <text x="42" y="190" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#2B3B3A">Code Review</text>
+  </g>
+
+  <g transform="translate(470 120)">
+    <text x="0" y="34" font-size="46" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#243630">Debug Code</text>
+
+    <rect x="0" y="78" width="930" height="330" rx="26" fill="url(#codeBg)"/>
+    <rect x="0" y="78" width="930" height="28" rx="26" fill="#0B1C22"/>
+    <circle cx="28" cy="92" r="7" fill="#FF6B6B"/>
+    <circle cx="50" cy="92" r="7" fill="#F7C75F"/>
+    <circle cx="72" cy="92" r="7" fill="#48D597"/>
+
+    <text x="26" y="156" font-family="Consolas, monospace" font-size="23" fill="#9BD3C7">1</text>
+    <text x="52" y="156" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">function</text>
+    <text x="170" y="156" font-family="Consolas, monospace" font-size="23" fill="#73D0FF">loginRequest</text>
+    <text x="350" y="156" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">(credentials) {</text>
+
+    <text x="26" y="196" font-family="Consolas, monospace" font-size="23" fill="#9BD3C7">2</text>
+    <text x="52" y="196" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">return fetch(</text>
+    <text x="180" y="196" font-family="Consolas, monospace" font-size="23" fill="#FFD166">'/api/auth/login'</text>
+    <text x="420" y="196" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">, {</text>
+
+    <text x="26" y="236" font-family="Consolas, monospace" font-size="23" fill="#9BD3C7">3</text>
+    <text x="52" y="236" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">method:</text>
+    <text x="185" y="236" font-family="Consolas, monospace" font-size="23" fill="#FFD166">'POST'</text>
+    <text x="286" y="236" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">,</text>
+
+    <text x="26" y="276" font-family="Consolas, monospace" font-size="23" fill="#9BD3C7">4</text>
+    <text x="52" y="276" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">body:</text>
+    <text x="160" y="276" font-family="Consolas, monospace" font-size="23" fill="#9AE6B4">JSON.stringify</text>
+    <text x="340" y="276" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">(credentials),</text>
+
+    <text x="26" y="316" font-family="Consolas, monospace" font-size="23" fill="#9BD3C7">5</text>
+    <text x="52" y="316" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">headers:</text>
+    <text x="190" y="316" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8">{ Authorization:</text>
+    <text x="480" y="316" font-family="Consolas, monospace" font-size="23" fill="#FFD166">`Bearer ${token}`</text>
+    <text x="760" y="316" font-family="Consolas, monospace" font-size="23" fill="#F8F8F8"> }</text>
+
+    <rect x="0" y="438" width="930" height="154" rx="26" fill="#F0F4F3"/>
+    <text x="28" y="490" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#243630" font-weight="700">Error / Stack Trace</text>
+    <text x="34" y="538" font-size="28" font-family="Consolas, monospace" fill="#CF5A5A">AuthError: missing bearer token</text>
+    <text x="34" y="570" font-size="24" font-family="Consolas, monospace" fill="#526864">at verifyToken(auth.js:22)</text>
+
+    <rect x="0" y="626" width="930" height="90" rx="18" fill="url(#accent)"/>
+    <text x="430" y="682" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#FFFFFF">Debug Code</text>
+  </g>
+
+  <g transform="translate(1110 175)">
+    <rect x="0" y="0" width="250" height="100" rx="18" fill="#F6FBF8" stroke="#CCDFD9"/>
+    <text x="22" y="42" font-size="17" font-family="Segoe UI, Arial, sans-serif" fill="#6B7B77">Security</text>
+    <text x="22" y="74" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1F2E2B">91%</text>
+  </g>
+
+  <g transform="translate(1110 315)">
+    <rect x="0" y="0" width="250" height="100" rx="18" fill="#F6FBF8" stroke="#CCDFD9"/>
+    <text x="22" y="42" font-size="17" font-family="Segoe UI, Arial, sans-serif" fill="#6B7B77">Code Health</text>
+    <text x="22" y="74" font-size="30" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#1F2E2B">Stable</text>
+  </g>
+</svg>
